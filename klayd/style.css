@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ec;
+    color: #333;
+}
+
+header {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+nav {
+    background-color: #455a64;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 40px;
+    background-color: white;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.home-image {
+    flex: 0.5;
+}   
+
+.home-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #455a64;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #263238;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+.content h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #455a64;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-container img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.journey {
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.journey h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #455a64;
+}
+
+.journey p {
+    line-height: 1.8;
+}
+@media (max-width: 768px) {
+
+    .home {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .home-image,
+    .home-text {
+        width: 100%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .content {
+        padding: 50px 20px;
+    }
+}
